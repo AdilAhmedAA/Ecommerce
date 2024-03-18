@@ -11,8 +11,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-
-
+    <link rel="stylesheet" href="assets/css/CUSTOM.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 </head>
 
 <body>
@@ -47,31 +47,31 @@
     <div class="categories py-5">
         <div class="container gx-5">
             <div class="inner">
-                <div class="categories-filters">
-                    <div class="row gx-2 gx-xl-3 gy-2">
-                        <div class="col-auto">
-                            <a class="tag active">Most Popular</a>
+                <div class="swiper categories-filters">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a onclick="toggleActive(this)" class="tag active">Most Popular</a>
                         </div>
-                        <div class="col-auto">
-                            <a class="tag">Most Popular</a>
+                        <div class="swiper-slide">
+                            <a onclick="toggleActive(this)" class="tag">Most Popular</a>
                         </div>
-                        <div class="col-auto">
-                            <a class="tag">Hot Deals</a>
+                        <div class="swiper-slide">
+                            <a onclick="toggleActive(this)" class="tag">Hot Deals</a>
                         </div>
-                        <div class="col-auto">
-                            <a class="tag">Sold Out</a>
+                        <div class="swiper-slide">
+                            <a onclick="toggleActive(this)" class="tag">Sold Out</a>
                         </div>
-                        <div class="col-auto">
-                            <a class="tag">Men</a>
+                        <div class="swiper-slide">
+                            <a onclick="toggleActive(this)" class="tag">Men</a>
                         </div>
-                        <div class="col-auto">
-                            <a class="tag">Women</a>
+                        <div class="swiper-slide">
+                            <a onclick="toggleActive(this)" class="tag">Women</a>
                         </div>
-                        <div class="col-auto">
-                            <a class="tag">Kids</a>
+                        <div class="swiper-slide">
+                            <a onclick="toggleActive(this)" class="tag">Kids</a>
                         </div>
-                        <div class="col-auto">
-                            <a class="tag">Premium Collection</a>
+                        <div class="swiper-slide">
+                            <a onclick="toggleActive(this)" class="tag">Premium Collection</a>
                         </div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@
     <footer>
         <div class="container">
             <div class="inner py-5">
-                <div class="row gy-5 gx-xl-5">
+                <div class="row gy-5">
                     <div class="col-lg-3 col-md-6">
                         <div class="newsletter">
                             <h6 class="text-uppercase text-white">join the club</h6>
@@ -266,7 +266,18 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    
+    <script>
+        var swiper4 = new Swiper(".swiper.categories-filters", {
+            loop: false,
+            setWrapperSize: true,
+            spaceBetween: 10,
+            slidesPerView: "auto"
+        });
+    </script>
 </body>
 
 </html>
